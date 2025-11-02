@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img-box">Box 1</div>
+<div class="img-box">Box 2</div>
+<div class="img-box">Box 3</div>
+<button id="bt">Click Me</button>
+<script>
+//     let bt = document.getElementById("bt");
+// let boxes = document.getElementsByClassName("img-box");
+// // let boxes = document.querySelector(".img-box");
+// console.log(boxes);
+//  // yeh array jaisa object hai
+
+// bt.addEventListener("click", function () {
+//   // humko loop lagana padega
+//   for (let i = 0; i < boxes.length; i++) {
+//     boxes[i].style.background = "lightgreen"; // har box alag se access karna padega
+//   }
+// });
+
+let bt = document.getElementById("bt");
+let boxes = document.querySelectorAll(".img-box");
+console.log(boxes);
+ // sabhi boxes milte hain
+
+bt.addEventListener("click", function () {
+  boxes.forEach((box) => {
+    box.style.background = "lightblue";
+  });
+});
+</script>
+    
+</body>
+</html>

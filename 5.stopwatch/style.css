@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: color-mix(in srgb, blue, rgb(231, 208, 208));
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.box{
+    width: 400px;
+    background-color: azure;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin-top: 5px;
+
+}
+h1{
+    text-align: center;
+    margin-top: 7px;
+    font-size: 40px;
+}
+button{
+   margin-top: 10px;
+   padding: 5px;
+   margin-right: 5px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+    background-color: aquamarine;
+}

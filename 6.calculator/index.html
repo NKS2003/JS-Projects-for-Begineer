@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="calculator">
+        <input type="text" name="display" id="inp" placeholder="0">
+        <div>
+            <button onclick="inp.value= '' ">AC</button> 
+            <button id="del" onclick="clearone()">DEL</button> 
+            <button onclick="inp.value  += '%' ">%</button> 
+            <button onclick="inp.value  += '/' ">/</button> 
+        </div>
+        <div>
+            <button onclick="inp.value  += '7' ">7</button> 
+            <button onclick="inp.value  += '8' ">8</button> 
+            <button onclick="inp.value  += '9' ">9</button> 
+            <button onclick="inp.value  += '*' ">*</button> 
+        </div>
+        <div>
+            <button onclick="inp.value  += '4' ">4</button> 
+            <button onclick="inp.value  += '5' ">5</button> 
+            <button onclick="inp.value  += '6' ">6</button> 
+            <button onclick="inp.value  += '-' ">-</button> 
+        </div>
+        <div>
+            <button onclick="inp.value  += '1' ">1</button> 
+            <button onclick="inp.value  += '2' ">2</button> 
+            <button onclick="inp.value  += '3' ">3</button> 
+            <button onclick="inp.value  += '+' ">+</button> 
+        </div>
+        <div>
+            <button onclick="inp.value  += '00' ">00</button> 
+            <button onclick="inp.value  += '0' ">0</button> 
+            <button onclick="inp.value  += '.' ">.</button> 
+            <button id = "su" onclick="sub()">=</button> 
+        </div>
+    </div> -->
+    <div class="calculator">
+        <input type="text" id="inp">
+        <div>
+            <button onclick="inp.value = '' ">AC</button>
+            <button onclick="inp.value = inp.value.slice(0, -1)">DEL</button>
+            <button onclick="inp.value += '%' ">%</button>
+            <button onclick="inp.value += '/' ">/</button>
+        </div>
+        <div>
+            <button onclick="inp.value += '7' ">7</button>
+            <button onclick="inp.value += '8' ">8</button>
+            <button onclick="inp.value += '9' ">9</button>
+            <button onclick="inp.value += '*' ">*</button>
+        </div>
+        <div>  
+            <button onclick="inp.value += '4' ">4</button>
+            <button onclick="inp.value += '5' ">5</button>
+            <button onclick="inp.value += '6' ">6</button>
+            <button onclick="inp.value += '-' ">-</button>
+        </div>
+        <div>
+            <button onclick="inp.value += '1' ">1</button>
+            <button onclick="inp.value += '2' ">2</button>
+            <button onclick="inp.value += '3' ">3</button>
+            <button onclick="inp.value += '+' ">+</button>
+        </div>
+        <div>
+            <button onclick="inp.value += '00' ">00</button>
+            <button onclick="inp.value += '0' ">0</button>
+            <button onclick="inp.value += '.' ">.</button>
+            <button onclick="cal()">=</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
